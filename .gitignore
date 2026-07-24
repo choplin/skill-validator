@@ -4,6 +4,9 @@
 # Binary
 skill-validator
 
+# Nix build output
+result
+
 # Test reports
 coverage.out
 

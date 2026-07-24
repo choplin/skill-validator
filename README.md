@@ -49,10 +49,11 @@ Spec compliance is table stakes. `skill-validator` goes further: it checks that 
 
 ### Install CLI
 
-You can install the CLI in three ways:
+You can install the CLI in four ways:
 
 - [Homebrew](#homebrew)
 - [Using Go](#using-go)
+- [Nix](#nix)
 - [Pre-commit hook](#pre-commit-hook)
 
 #### Homebrew
@@ -74,6 +75,27 @@ Or build from source:
 git clone https://github.com/agent-ecosystem/skill-validator.git
 cd skill-validator
 go build -o skill-validator ./cmd/skill-validator
+```
+
+#### Nix
+
+Install directly from the repository flake:
+
+```
+nix profile add github:choplin/skill-validator
+```
+
+Run without installing:
+
+```
+nix run github:choplin/skill-validator -- --help
+```
+
+From a local checkout, replace the GitHub reference with `.`. The flake also
+provides a development shell with Go and golangci-lint:
+
+```
+nix develop
 ```
 
 #### Pre-commit hook

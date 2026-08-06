@@ -24,7 +24,7 @@
         {
           default = pkgs.buildGoModule {
             pname = "skill-validator";
-            version = "1.5.6";
+            version = "1.6.0";
 
             src = self;
             vendorHash = "sha256-q8JRenRhDEzYO9Ub3SnDQ7phG0bWRJzDU2vPDllIrwU=";
@@ -33,7 +33,7 @@
 
             meta = {
               description = "Validate and analyze Agent Skill packages";
-              homepage = "https://github.com/choplin/skill-validator";
+              homepage = "https://github.com/agent-ecosystem/skill-validator";
               license = pkgs.lib.licenses.mit;
               mainProgram = "skill-validator";
             };
